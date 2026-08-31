@@ -3,7 +3,7 @@ Instruções para acesso de uma instância do Headlamp publicada em um cluster K
 
 ## Acesso via PowerShell
 
-## Bash
+## Acesso via Bash
 Script em Bash (arquivo headlamp-forward.sh):
 
 ```bash
