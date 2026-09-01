@@ -1,6 +1,22 @@
 # headlamp-helmchart-kubernetes
 Instruções para acesso de uma instância do Headlamp publicada em um cluster Kubernetes via chart Helm.
 
+## Criando uma Service Account para acesso ao Headlamp
+
+Instrução que cria a Service Account:
+
+```bash
+kubectl -n kube-system create serviceaccount headlamp-admin
+```
+
+Configurar a Role para a Service Account:
+
+```bash
+kubectl create clusterrolebinding headlamp-admin --serviceaccount=kube-system:headlamp-admin --clusterrole=cluster-admin
+```
+
+## Gerando o token de acesso ao Headlamp
+
 ## Acesso via PowerShell
 Script em PowerShell (arquivo headlamp-forward.ps1):
 
