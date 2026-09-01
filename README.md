@@ -1,6 +1,10 @@
 # headlamp-helmchart-kubernetes
 Instruções para acesso de uma instância do Headlamp publicada em um cluster Kubernetes via chart Helm.
 
+Acessando o Headlamp via browser:
+
+![Headlamp acessado via browser](img/headlamp-01.png)
+
 ## Criando uma Service Account para acesso ao Headlamp
 
 Instrução que cria a Service Account:
