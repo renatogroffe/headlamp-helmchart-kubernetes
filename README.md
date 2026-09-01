@@ -17,6 +17,12 @@ kubectl create clusterrolebinding headlamp-admin --serviceaccount=kube-system:he
 
 ## Gerando o token de acesso ao Headlamp
 
+Instrução para gerar o token:
+
+```bash
+kubectl create token headlamp-admin --duration 24h -n kube-system
+```
+
 ## Acesso via PowerShell
 Script em PowerShell (arquivo headlamp-forward.ps1):
 
