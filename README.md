@@ -1,6 +1,15 @@
 # headlamp-helmchart-kubernetes
 Instruções para acesso de uma instância do Headlamp publicada em um cluster Kubernetes via chart Helm.
 
+## Instalando o Headlamp via Helm
+
+Instruções necessárias:
+
+```bash
+helm repo add headlamp https://kubernetes-sigs.github.io/headlamp/
+helm install my-headlamp headlamp/headlamp --namespace kube-system
+```
+
 ## Criando uma Service Account para acesso ao Headlamp
 
 Instrução que cria a Service Account:
